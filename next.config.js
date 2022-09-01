@@ -6,4 +6,9 @@ const nextConfig = {
   swcMinify: true,
 };
 
-module.exports = withLinaria(nextConfig);
+module.exports = withLinaria({
+  ...nextConfig,
+  linaria: {
+    displayName: true,
+  },
+});
